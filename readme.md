@@ -12,3 +12,7 @@ Wrawling for a public key yeilds a secure link to the owner of that key, regardl
 - Wrawl server responds to ip lookup requests.
 - Wrawl server assists in nat hole punching.
 - Wrawl server becomes a decentralized pack of wrawl servers.
+- Wrawl client may publish its own public key to a wrawl server.
+- Wrawl client may lookup a public key from a wrawl server.
+- Wrawl client may establish a secure link to another rawl client.
+- Wrawl client may punch through nat.
