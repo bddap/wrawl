@@ -4,15 +4,34 @@
 
 Wrawling for a public key yeilds a secure link to the owner of that key, regardless of network topology.
 
+## Terms
+
+### wisdom
+
+A map from public key to address.
+
+### publisher
+
+An agent publishing its own public key.
+
+### curator
+
+An agent that accepts wisdom from publishers, and distributes it to conumers.
+
+### consumer
+
+An agent searching for a publisher with a specific public key.
+
 ## Subgoals
 
-- Wrawl server stores a map from public key to ip.
-- Wrawl server accepts publication of public keys.
-- Wrawl server verifies publications with challenges.
-- Wrawl server responds to ip lookup requests.
-- Wrawl server assists in nat hole punching.
-- Wrawl server becomes a decentralized pack of wrawl servers.
-- Wrawl client may publish its own public key to a wrawl server.
-- Wrawl client may lookup a public key from a wrawl server.
-- Wrawl client may establish a secure link to another rawl client.
-- Wrawl client may punch through nat.
+- curator stores a widom.
+- curator accepts new wisdom.
+- curator challenges publishers verifiy wisdom.
+- curator passes wisdom to consumers on request.
+- curator shares wisdom with other curators.
+- publisher publishes its own public key to curators.
+- publisher responds to challenges from curators and consumers.
+- consumer looks up the address of a publisher.
+- consumer establishes a secure link to a publisher.
+- consumer punch through nat.
+- publisher, curator, and consumer work together to punch NAT holes.
